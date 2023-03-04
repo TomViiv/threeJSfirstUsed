@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { ThreeJsPageComponent } from './pages/three-js-page/three-js-page.component';
 import { CubeComponent } from './pages/cube/cube.component';
 import { CanvasBoxComponent } from './pages/canvas-box/canvas-box.component';
+import { SplinePageComponent } from './pages/spline-page/spline-page.component';
+import { PodiumComponent } from './pages/spline-page/podium/podium.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ThreeJsPageComponent,
     CubeComponent,
-    CanvasBoxComponent
+    CanvasBoxComponent,
+    SplinePageComponent,
+    PodiumComponent
   ],
   imports: [
     BrowserModule,

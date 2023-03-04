@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@splinetool/loader": "^0.9.251",
     "rxjs": "~7.5.0",
     "three": "^0.150.1",
     "tslib": "^2.3.0",
