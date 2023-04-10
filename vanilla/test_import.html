@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		<script type="module">
+			import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+            import { MTLLoader } from '../frontProject/nodes_modules/three/examples/jsm/loaders/MTLLoader.js';
+            import { OBJLoader } from '../frontProject/nodes_modules/three/examples/jsm/loaders/OBJLoader.js';
+
+			const scene = new THREE.Scene();
+			var my3Dobject = undefined;
+            var mtlLoader = new MTLLoader();
+            mtlLoader.load("../frontProject/src/assets/3D/PODIUM.mtl", function(materials){
+                materials.preload();
+                var objLoader = new OBJLoader();
+                objLoader.setMaterials(materials);
+                objLoader.load("../frontProject/src/assets/3D/PODIUM.obj", function(object){
+                my3Dobject = object;
+                that.scene.add( my3Dobject );
+                });
+            });
+		</script>
+	</body>
+</html>

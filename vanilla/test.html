@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vanilla</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <p>test</p>
+    <canvas id="canvas3d"></canvas>
+  </body>
+</html>
+
+<script>
+  import { Application } from "@splinetool/runtime";
+
+  const canvas = document.getElementById("canvas3d");
+  const app = new Application(canvas);
+  app.load("https://prod.spline.design/7UrxarE0xA2joEsv/scene.splinecode");
+</script>
