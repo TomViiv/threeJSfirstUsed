@@ -11,7 +11,7 @@ export default class Room {
     console.log(this.room);
     console.log(this.actualRoom);
     
-    //this.setModel();
+    this.setModel();
 
     /*const geometry = new THREE.BoxGeometry(1,1,1);
     const material = new THREE.MeshBasicMaterial({ color: 0x00ff00});
